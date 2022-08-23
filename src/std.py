@@ -6,3 +6,4 @@ def std(sentence: str, ctx) -> None:
 
 def setup(ctx):
   ctx.mets['std'] = {"python": True, "func": std}
+  return ctx
