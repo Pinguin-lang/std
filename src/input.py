@@ -11,3 +11,4 @@ def inputcool(args: list, ctx) -> str:
 def setup(ctx):
   ctx.fn['input'] = {"python": True, 'func': inpute, 'args': [{"name": "console", 'type': 'str', 'required': False, 'default': ''}], 'kwargs': []}
   ctx.fn['cinput'] = {"python": True, 'func': inputcool, 'args': [{"name": "console", 'type': 'str', 'required': True, 'default': ''}], 'kwargs': []}
+  return ctx
