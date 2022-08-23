@@ -1,10 +1,10 @@
 from getkey import getkey
 from .std import stdout
-def inpute(args: list, ctx) -> str:
+def inpute(args: list, kwargs: dict, ctx) -> str:
   stdout.write(args[0]['data'])
   return getkey()
 
-def inputcool(args: list, ctx) -> str:
+def inputcool(args: list, kwargs: dict, ctx) -> str:
   stdout.write(args[0]['data'])
   return input()
 
