@@ -7,5 +7,5 @@ def clear(args: list, ctx):
     system('clear')
 
 def setup(ctx):
-  ctx.fns['clear'] = {"python": True, 'func': clear, 'args': [], 'kwargs': []}
+  ctx.fn['clear'] = {"python": True, 'func': clear, 'args': [], 'kwargs': []}
   return ctx
